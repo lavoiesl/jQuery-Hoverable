@@ -1,0 +1,13 @@
+{
+    "name": "lavoiesl/jQuery-Hoverable",
+    "type": "jquery-plugin",
+    "description": "jQuery plugin that adds and removes a class to toggle hovered state",
+    "keywords": ["jQuery"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sébastien Lavoie",
+            "email": "github@lavoie.sl"
+        }
+    ]
+}

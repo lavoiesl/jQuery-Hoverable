@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery AutoCollapser Demo</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="jQuery.hoverable.js"></script>
+
+  <style>
+    .hoverable ul {
+      display:none;
+    }
+    .hoverable-over ul {
+      display: block;
+    }
+    body * {
+      padding: 5px; 
+      border: 1px solid #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>jQuery Hoverable Demo</h1>
+  <div class="hoverable">
+    <h4>Title</h4>
+    <ul>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+    </ul>
+  </div>
+  <script>
+    $(function() {
+        $('.hoverable')
+          .hoverable()
+          .on('hoverable.over', function(event){
+            console.log("Hoverable is hovered");
+          })
+          .on('hoverable.out', function(event,data){
+            console.log("Hoverable is not longer hovered");
+          });
+    });
+  </script>
+</body>
+</html>
