@@ -25,7 +25,7 @@
 
   var methods = {
     init: function(options) {
-      var settings = $.extend(default_settings, options);
+      var settings = $.extend({}, default_settings, options);
       var data = {
         settings: settings
       };
