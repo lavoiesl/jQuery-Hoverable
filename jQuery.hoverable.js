@@ -25,12 +25,9 @@
 
   var methods = {
     init: function(options) {
-      var settings = $.extend(default_settings, options);
-      var data = {
-        settings: settings
-      };
-
-      this.data(plugin.name, data);
+      this.data(plugin.name, {
+          settings: $.extend({}, default_settings, options)
+      });
       methods.bind.call(this);
     },
 
